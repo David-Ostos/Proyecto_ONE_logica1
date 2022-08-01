@@ -1,2 +1,3 @@
-alert("La edad de David es de...");
-alert("?")
+document.write("La edad de David es...")
+document.write("<br>")
+document.write("?")
