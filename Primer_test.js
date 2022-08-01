@@ -1,1 +1,2 @@
-alert("hola");
+alert("La edad de David es de...");
+alert("?")
