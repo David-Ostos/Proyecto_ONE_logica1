@@ -9,16 +9,11 @@
 	document.write((22+27+17));
 	document.write("<br>");
 	document.write("<br>");
-	document.write("Juan nació en el año...");
-	document.write("<br>");
-	document.write(2022 - 22);
+	document.write("Juan tiene: " + (2022-2000) + " años");;
 	document.write("<br>");
 	document.write("<br>");
-	document.write("Pedro nació en el año...");
-	document.write("<br>");
-	document.write(2022 - 27);
+	document.write("Pedro tiene: " + (2022-1995) + " años");
 	document.write("<br>");
 	document.write("<br>");
-	document.write("Carlos nació en el año...");
-	document.write("<br>");
-	document.write(2022 - 17);
+	document.write("Carlos tiene: " + (2022-2005) + " años");
+
