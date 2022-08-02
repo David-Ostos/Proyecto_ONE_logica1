@@ -1,10 +1,6 @@
-//altura y peso de David
-var pesoDa = 75;
-var alturaDA = 1.72;
-
 //altura y peso de jose 
-var pesoJo = 80;
-var alturaJo = 1.75;
+var imcDa  = CalcularImc(75,1.72);
+var imcJo = CalcularImc(80,1.75)
 
 function salta2() {
     document.write("<br>")
@@ -28,8 +24,6 @@ function CalcularImc(peso,altura) {
     return(imc);
 }
 
-CalcularImc(pesoDa,alturaDA);
-imprimir("El IMC de David es de :" + imc);
+imprimir("El IMC de David es de :" + imcDa);
 
-CalcularImc(pesoJo,alturaJo);
-imprimir("El IMC de Jose es de :" + imc);
+imprimir("El IMC de Jose es de :" + imcJo);
