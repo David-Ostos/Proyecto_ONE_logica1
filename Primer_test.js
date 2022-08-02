@@ -15,46 +15,53 @@
  
     //funccion de saltar 2 linea 
     function salta2() {
-
         document.write("<br>")
         document.write("<br>")
+        document.write("<br>")
+        document.write("<hr>")
+        document.write("<br>")
+        document.write("<br>")
+        
     }
     //funcion para escribir y saltar las lineas mas simplificado.
     function imprimir(frase) {
-        document.write(frase)
+
+        document.write("<big>" + frase + "</big>")
+        
         salta2()
     }
- 
-    imprimir("La edad de David es...<br>" + a95 + " años")
+    imprimir("<hr><br>Todo es posible mientras seas constante.");
 
-	imprimir("Juan tiene: " + a00 + " años");;
+    imprimir("La edad de David es...<br>" + a95 + " años.");
+
+	imprimir("Juan tiene: " + a00 + " años.");
 	
-	imprimir("Pedro tiene: " + a95 + " años");
+	imprimir("Pedro tiene: " + a95 + " años.");
     
     //anexando la era 2030
     anho = 2030;
 
-	imprimir("Carlos tiene: " + a05 + " años");
+	imprimir("Carlos tiene: " + a05 + " años.");
 
-    promedio = Math.round((22+27+25+27)/4)
+    promedio = Math.round((22+27+25+27)/4);
 
     //Promedio de las edades de los hombres
-    imprimir("El promedio de las edades de los hombres es: " + promedio + " años");
+    imprimir("El promedio de las edades de los hombres es: " + promedio + " años.");
 
     //anexando a las chicas en el año actual
-    anho = 2022
+    anho = 2022;
 
-    imprimir("Jimena tiene: " + a10 + " años")
+    imprimir("Jimena tiene: " + a10 + " años.");
 
-    imprimir("Paola tiene: " + a95 + " años");
+    imprimir("Paola tiene: " + a95 + " años.");
 
-    imprimir("laura tiene: " + a05 + " años");
+    imprimir("laura tiene: " + a05 + " años.");
 
     //creando variable promedio 
-    promedio = Math.round((12+17+27)/3)
+    promedio = Math.round((12+17+27)/3);
 
     //Promedio de las edades de las chicas
-    imprimir("El promedio de las edades de las mujeres es: " + promedio + " años");
+    imprimir("El promedio de las edades de las mujeres es: " + promedio + " años.");
     
 
     /*    }
