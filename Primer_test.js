@@ -1,86 +1,87 @@
-    // variable año
+     // variable año
     var anho = 2022;
+ 
+    //variable de edad en el año 1995
+    var a95 = anho-1995;
+ 
+    //variable del año 2000
+     var a00 = anho-2000;
+ 
+     //variable año 2005
+    var a05 = anho-2005;
+ 
+    //variable año 2010
+    var a10 = anho-2010;
+ 
+    //funccion de saltar 2 linea 
+    function salta2() {
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<hr>")
+        document.write("<br>")
+        document.write("<br>")
+        
+    }
+    //funcion para escribir y saltar las lineas mas simplificado.
+    function imprimir(frase) {
 
-   //variable de la edad de David
-    var edDa = anho-1995;
-   
-   //variable de la edad de Juan
-     var edJu = anho-2000;
-   
-   //variable de la edad de Pedro
-    var edPe = anho-1995;
-   
-   //variable de la edad de Carlos
-    var edCa = anho-2005;
-  
-  //variable de la edad de Jimena
-    var edJi = anho-2010;
+        document.write("<big>" + frase + "</big>")
+        
+        salta2()
+    }
+    imprimir("<hr><br>Todo es posible mientras seas constante.");
 
-  //variable de la edad de Paula
-    var edPa = anho-1995;
+    imprimir("La edad de David es...<br>" + a95 + " años.");
 
-  //variable de la edad de Laura
-    var edLa = anho-2005;
-
-
-    //Esta es la edad de david     
-    document.write("La edad de David es...")
-    document.write("<br>");
-    document.write(edDa + " años");
-    document.write("<br>");
-    document.write("<br>");
-
-    
-    //Edad de juan en el 2022
-	document.write("Juan tiene: " + edJu + " años");;
-	document.write("<br>");
-	document.write("<br>");
-
-    //edad de pedro en el 2022
-	document.write("Pedro tiene: " + edPe + " años");
-	document.write("<br>");
-	document.write("<br>");
+	imprimir("Juan tiene: " + a00 + " años.");
+	
+	imprimir("Pedro tiene: " + a95 + " años.");
     
     //anexando la era 2030
     anho = 2030;
-    
-    //edad de carlos en el 2030
-	document.write("Carlos tiene: " + edCa + " años");
-    document.write("<br>");
-	document.write("<br>");
 
-    //creando variable promedio 
-    promedio = Math.round((22+27+25+27)/4)
+	imprimir("Carlos tiene: " + a05 + " años.");
+
+    promedio = Math.round((22+27+25+27)/4);
 
     //Promedio de las edades de los hombres
-    document.write("El promedio de las edades de los hombres es: " + promedio + " años");
-    document.write("<br>");
-	document.write("<br>");
-    document.write("<br>");
-	document.write("<br>");
+    imprimir("El promedio de las edades de los hombres es: " + promedio + " años.");
 
     //anexando a las chicas en el año actual
-    anho = 2022
+    anho = 2022;
 
-    //Edad de Jimena
-    document.write("Jimena tiene: " + edJi + " años")
-    document.write("<br>");
-	document.write("<br>");
-    //Edad de paula
-    document.write("Paola tiene: " + edPa + " años");
-    document.write("<br>");
-	document.write("<br>");
+    imprimir("Jimena tiene: " + a10 + " años.");
 
-    //Edad de laura
-    document.write("laura tiene: " + edLa + " años");
-    document.write("<br>");
-	document.write("<br>");
+    imprimir("Paola tiene: " + a95 + " años.");
+
+    imprimir("laura tiene: " + a05 + " años.");
 
     //creando variable promedio 
-    promedio = Math.round((12+17+27)/3)
+    promedio = Math.round((12+17+27)/3);
 
     //Promedio de las edades de las chicas
-    document.write("El promedio de las edades de las mujeres es: " + promedio + " años");
-    document.write("<br>");
-	document.write("<br>");
+    imprimir("El promedio de las edades de las mujeres es: " + promedio + " años.");
     
+
+    /*    }
+    //funccion de saltar linea de 4 lineas
+    function salta4() {
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+    
+    //variabled esalto de linea
+    var salto4 = "<br><br><br><br>"
+    var salto2 = "<br><br>"
+    var salto1 ="<br>"
+
+       //funccion de saltar linea de 1 linea
+    function salta1() {
+
+        document.write("<br>")
+    }
+    */
