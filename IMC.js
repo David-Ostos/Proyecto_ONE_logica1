@@ -1,25 +1,20 @@
-function salta2() {
-    document.write("<br>")
-    document.write("<br>")
-    document.write("<br>")
-    document.write("<hr>")
-    document.write("<br>")
-    document.write("<br>")
-    
+function salta() {
+    document.write("<br><br><br><hr><br><br>")
 }
 //funcion para escribir y saltar las lineas mas simplificado.
 function imprimir(frase) {
 
     document.write("<big>" + frase + "</big>");
-    salta2();
+    salta();
 }
 
-function CalcularImc(peso,altura,nombre) {
+function CalcularImc(peso,altura) {
 
-    imc =Math.round(peso / (altura * altura));
-    imprimir("El IMC calculado de: " + nombre + (" es ") + imc);
+   return(Math.round(peso / (altura * altura)))
 }
 
 //altura y peso de jose 
-CalcularImc(75,1.72, "David");
-CalcularImc(80,1.75, "Jose");
+var david = CalcularImc(75,1.72);
+var jose = CalcularImc(80,1.75);
+
+imprimir("El IMC calculado de David es de: " + david + ", el de Jose es de: " + jose + " y el promedio de los 2 es de: " + (david+jose)/2);
