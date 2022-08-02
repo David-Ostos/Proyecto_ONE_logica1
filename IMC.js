@@ -14,3 +14,10 @@ function imprimir(frase) {
     
     salta2()
 }
+
+//altura y peso de David
+var pesoDa = 75;
+var alturaDA = 1.72;
+var imc = pesoDa / (alturaDA * alturaDA)
+
+imprimir("El peso IMC de David es:" + imc)
