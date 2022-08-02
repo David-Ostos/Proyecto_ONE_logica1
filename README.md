@@ -1,1 +1,1 @@
-# Proyecto_ONE_logica1
+# Proyecto ONE logica1
