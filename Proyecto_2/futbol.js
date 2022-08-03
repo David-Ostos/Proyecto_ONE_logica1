@@ -7,3 +7,4 @@ function imprimir(frase) {
 
     document.write("<big>" + frase + "</big>");
     salta();
+    }
