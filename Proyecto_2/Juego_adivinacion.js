@@ -23,11 +23,11 @@ function imprimir(frase) {
 
     if (numeroPensado == numeroUsuario) {    
 
-        alert("Usted acertó, en el intento " + intentos + " el numero pensado era " + numeroPensado) 
+        alert("Usted acertó, en el intento " + contador + " el numero pensado era " + numeroPensado) 
         break; 
 
     } else {
-             alert("Usted erró");
+             alert("Usted erró " + numeroPensado);
     
         } 
 
@@ -39,7 +39,7 @@ function imprimir(frase) {
 
     if (numeroPensado == numeroUsuario) {
 
-        imprimir("Usted acertó, en el intento " + intentos + " el numero pensado era " + numeroPensado)  
+        imprimir("Usted acertó, en el intento " + contador+ " el numero pensado era " + numeroPensado)  
     } 
         else{
             imprimir("Usted erró, el numero pensado era " + numeroPensado);
