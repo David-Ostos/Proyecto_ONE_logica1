@@ -27,7 +27,7 @@ function imprimir(frase) {
         break; 
 
     } else {
-             alert("Usted erró " + numeroPensado);
+             alert("Usted erró ");
     
         } 
 
