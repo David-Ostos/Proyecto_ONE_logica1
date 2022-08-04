@@ -1,8 +1,4 @@
-var victoris = parseInt(prompt("informe la cantidad de victorias"));
-var empates = parseInt(prompt("informe la cantidad de empates"));
-var puntosTotales = ((victoris * 3) + empates);
-
-    function salta() {
+     function salta() {
 
          document.write("<br><br><br><hr><br><br>")
     }
@@ -15,22 +11,6 @@ var puntosTotales = ((victoris * 3) + empates);
 
     }
 
-    imprimir("El total de puntos del equipo es de: " + puntosTotales + " puntos.");
-
-    if (puntosTotales > 28) {
-
-        imprimir("El equipo está mejor que el año pasado ");
-
-    }
-
-    if (puntosTotales < 28) {
-
-        imprimir("El equipo está peor que el año pasado ");
-    }
-
-
-    if (puntosTotales == 28) {
-
-        imprimir("El equipo está igual que el año pasado ");
-
-    }
+    var anhoMundial = 1930;
+    
+    alert("Hubo mundial de la FIFA en el año " + anhoMundial)
