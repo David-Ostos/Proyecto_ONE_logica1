@@ -18,14 +18,14 @@ imprimir("WHILE")
 
 while (numeroL <= 10) {
 
-    imprimir(nuemroU + " por " + numeroL + " = " + nuemroU * numeroL);
-    numeroL = numeroL + 1;
+    imprimir(nuemroU + " X " + numeroL + " = " + nuemroU * numeroL);
+    numeroL++;
      }
 
 imprimir("FOR")
 
 for (var numeroL = 0; numeroL <= 10; numeroL++) {
 
-        imprimir(nuemroU + " por " + numeroL + " = " + nuemroU * numeroL);
+        imprimir(nuemroU + " X " + numeroL + " = " + nuemroU * numeroL);
 
     }
