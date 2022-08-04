@@ -1,3 +1,6 @@
+var numeroPensado = Math.round(Math.random()* 10);
+var numeroUsuario = parseInt(prompt("Ingrese su número pensado entre 0-10"));
+
 
 function salta() {
     document.write("<br><br><br><hr><br><br>")
@@ -14,6 +17,10 @@ function CalcularImc(peso,altura) {
    return((peso / (altura * altura)))
 }
 
-if (imcCalculado < 18.5) {
-    imprimir("El IMC esta por debajo de lo recoemndado")
+if (numeroPensado == numeroUsuario) {
+    imprimir("Usted si acertó")
+}
+
+else {
+    imprimir("Usted fallo el numero era el " + numeroPensado)
 }
