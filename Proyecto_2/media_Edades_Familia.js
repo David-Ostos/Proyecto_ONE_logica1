@@ -10,3 +10,18 @@ function imprimir(frase) {
         salta();
 
     }
+
+var numeroMiembros = parseInt(prompt("Ingrese numero de familiares"))
+var contador = 1;
+var totalEdades = 0;
+
+while (contador <= numeroMiembros) {
+
+    var edad = parseInt(prompt("Ingrese la edad del familiar"));
+    totalEdades = totalEdades + edad;
+    contador++;
+}
+
+var  promedioEdad = totalEdades / numeroMiembros;
+
+imprimir("El promedio de las edades es de: " + promedioEdad);
