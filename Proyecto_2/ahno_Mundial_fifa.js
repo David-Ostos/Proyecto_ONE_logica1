@@ -12,5 +12,10 @@
     }
 
     var anhoMundial = 1930;
-    
-    alert("Hubo mundial de la FIFA en el año " + anhoMundial)
+    var limite = parseInt(prompt("ingrece el año limite para calcular"))
+    while (anhoMundial <= limite){
+        
+        imprimir("Hubo mundial de la FIFA en el año " + anhoMundial);
+        anhoMundial = anhoMundial + 4;
+
+    }
