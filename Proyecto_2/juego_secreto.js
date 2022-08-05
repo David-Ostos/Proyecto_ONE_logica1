@@ -1,5 +1,6 @@
-var secreto = 5 ;
+var secreto = Math.round(Math.random() * 10) ;
 var input = document.querySelector("input");
+input.focus();
 
 function verificar() {
 
@@ -13,6 +14,8 @@ function verificar() {
 
     }
     
+    input.value = "";
+    input.focus();
 }
 
 var button = document.querySelector("button");
