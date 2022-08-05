@@ -14,11 +14,26 @@ function sortearNumeros (cantidad) {
     var contador = 1;
 
     while(contador <= cantidad){
-
+        
         numeroAleatorio = aleatorio();
-        secretos.push(numeroAleatorio);
-        contador++;
+        console.log(numeroAleatorio);
+        var encontrado = false;
 
+        if(numeroAleatorio != 0){
+            for(var posicion = 0; posicion < secretos.length; posicion++){
+                if(numeroAleatorio == secretos[posicion]){
+                    encontrado = true;
+                    break;
+                }
+            }
+
+            if(encontrado == false){
+                secretos.push(numeroAleatorio);
+                contador++;
+            }
+
+        }
+        
     }
     
     return secretos;
