@@ -1,17 +1,54 @@
-var secretos =[3,5,7,9] ;
+var secretos = sortearNumeros(4);
 var input = document.querySelector("input");
-
 input.focus();
+
+function aleatorio(){
+
+    return Math.round(Math.random()*10);
+
+}
+
+function sortearNumeros (cantidad) {
+
+    var secretos= [];
+    var contador = 1;
+
+    while(contador <= cantidad){
+        
+        numeroAleatorio = aleatorio();
+        console.log(numeroAleatorio);
+        var encontrado = false;
+
+        if(numeroAleatorio != 0){
+            for(var posicion = 0; posicion < secretos.length; posicion++){
+                if(numeroAleatorio == secretos[posicion]){
+                    encontrado = true;
+                    break;
+                }
+            }
+
+            if(encontrado == false){
+                secretos.push(numeroAleatorio);
+                contador++;
+            }
+
+        }
+        
+    }
+    
+    return secretos;
+}
 
 function verificar() {
     
     var encontrado = false ;
-    for(var posicion = 0; posicion < 4; posicion++){
+
+    for(var posicion = 0; posicion < secretos.length; posicion++){
 
         if (parseInt(input.value) == secretos[posicion]){
         
             alert("Usted acertó");
-            encontrado = true
+            encontrado = true;
             input.focus();
             input.value = "";
             break;
@@ -27,5 +64,8 @@ function verificar() {
     }
   
 }
+
 var button = document.querySelector("button");
 button.onclick = verificar;
+
+console.log(secretos);
