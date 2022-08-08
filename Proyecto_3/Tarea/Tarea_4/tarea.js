@@ -49,11 +49,11 @@ function leyenda(x,y,color,texto){
 dibujarBarra(50,50,serie2009, colores, "2009");
 dibujarBarra(150,50,serie2019, colores, "2019");
 
-leyenda(250,50,"blue","Google");
-leyenda(250,70,"green","Firefox");
-leyenda(250,90,"yellow","Explorer/Edge");
-leyenda(250,110,"red","Safari");
-leyenda(250,130,"gray","Otros");
+leyenda(250,50,"blue","Google " + serie2009[0] + "% | " + serie2019[0] + "%");
+leyenda(250,70,"green","Firefox "+ serie2009[1] + "% | " + serie2019[1] + "%");
+leyenda(250,90,"yellow","Explorer/Edge "+ serie2009[2] + "% | " + serie2019[2] + "%");
+leyenda(250,110,"red","Safari "+ serie2009[3] + "% | " + serie2019[3] + "%");
+leyenda(250,130,"gray","Otros "+ serie2009[4] + "% | " + serie2019[4] + "%");
 /*
 pincel.fillStyle = color; //propiedad 
 pincel.fillRect(x,y,50,50); //funcion 
