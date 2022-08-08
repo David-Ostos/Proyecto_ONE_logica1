@@ -1,17 +1,20 @@
-function dibujarCuadroVerde(){
+function dibujarCuadro(x,y,color){
 
     var pantalla = document.querySelector("canvas");
     var pincel = pantalla.getContext("2d");
     
-    pincel.fillStyle = "green"; //propiedad 
-    pincel.fillRect(0,0,50,50); //funcion 
+    pincel.fillStyle = color; //propiedad 
+    pincel.fillRect(x,y,50,50); //funcion 
     pincel.strokeStyle ="black"; // color de linea 
-    pincel.strokeRect(0,0,50,50); // hacer una linea en el borde
+    pincel.strokeRect(x,y,50,50); // hacer una linea en el borde
 }
 
+for (var x = 0; x < 600; x = x + 50){
 
-dibujarCuadroVerde();
-
+    dibujarCuadro(x,0,"green");
+    dibujarCuadro(x,50,"yellow");
+    dibujarCuadro(x,100,"red");
+}
 
 
 /*
