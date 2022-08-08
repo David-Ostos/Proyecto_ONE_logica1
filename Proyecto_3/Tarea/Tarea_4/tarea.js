@@ -54,9 +54,3 @@ leyenda(250,70,"green","Firefox "+ serie2009[1] + "% | " + serie2019[1] + "%");
 leyenda(250,90,"yellow","Explorer/Edge "+ serie2009[2] + "% | " + serie2019[2] + "%");
 leyenda(250,110,"red","Safari "+ serie2009[3] + "% | " + serie2019[3] + "%");
 leyenda(250,130,"gray","Otros "+ serie2009[4] + "% | " + serie2019[4] + "%");
-/*
-pincel.fillStyle = color; //propiedad 
-pincel.fillRect(x,y,50,50); //funcion 
-pincel.strokeStyle ="black"; // color de linea 
-pincel.strokeRect(x,y,50,50); // hacer una linea en el borde
-*/
