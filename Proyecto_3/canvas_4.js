@@ -20,7 +20,18 @@ function limpiarPantalla (){
 
 }
 
+var x =0;
 
-diseñarCircunferencia(x,20,10);
+function actualizarPantalla (){
+
+    limpiarPantalla()
+    diseñarCircunferencia(x,20,10);
+    x = x + (Math.round(Math.random() * 10));
+
+}
+
+setInterval(actualizarPantalla,50);
+
+//diseñarCircunferencia(20,20,10)
 
 
