@@ -21,17 +21,32 @@ function limpiarPantalla (){
 }
 
 var x =0;
+var sentido = 1;
+var aleatorio = aleatorio ;
+
+function aleatorio (){
+    
+    return (Math.round(Math.random() * 30));
+    
+}
 
 function actualizarPantalla (){
 
-    limpiarPantalla()
-    diseñarCircunferencia(x,20,10);
-    x = x + (Math.round(Math.random() * 10));
+        limpiarPantalla()
 
+        if(x > 600){
+            
+           sentido = -1 ;
+
+        }else if(x < 0){
+            
+            sentido = 1;
+        
+        }
+
+        diseñarCircunferencia(x,20,10);
+        x = x + sentido * aleatorio();
 }
+    
 
-setInterval(actualizarPantalla,50);
-
-//diseñarCircunferencia(20,20,10)
-
-
+setInterval(actualizarPantalla,30);
