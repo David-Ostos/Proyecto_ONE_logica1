@@ -14,11 +14,13 @@ function diseñarCircunferencia(x,y,radio) {
 }
 
 
-
-
-for(var x = 20; x < 600; x++){
+function limpiarPantalla (){
 
     pincel.clearRect(0,0,600,400);
-    diseñarCircunferencia(x,20,10)
+
 }
+
+
+diseñarCircunferencia(x,20,10);
+
 
