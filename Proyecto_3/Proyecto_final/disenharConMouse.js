@@ -107,6 +107,7 @@ function seleccionarColor(evento){
         }else if(x > xVerde && x < (xVerde + tamanhoCuadrados)){
 
             return colorActual = "green";
+            
         }else if (x > xAzul && x < (xAzul + tamanhoCuadrados)){
 
             return colorActual = "blue";
