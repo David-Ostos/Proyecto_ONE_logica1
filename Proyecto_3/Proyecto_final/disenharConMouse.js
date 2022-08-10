@@ -5,6 +5,7 @@ var pincel = pantalla.getContext('2d');
 pincel.fillStyle = 'grey';
 pincel.fillRect(0, 0, 600, 400);
 
+var colorActual = "blue";
 var puedoDibujar = false;
 
 // variables para etener el tamaño de los cudrados del cambio de los colores
@@ -15,13 +16,13 @@ var yCuadrados = 0;
 var tamanhoCuadrados = 50;
 
 
-function dibujarCirculo(x,y) {
+function dibujarCirculo(x,y,colorActual) {
     if(puedoDibujar) {
 
        // var x = evento.pageX - pantalla.offsetLeft;
        // var y = evento.pageY - pantalla.offsetTop;
 
-        pincel.fillStyle = "blue";
+        pincel.fillStyle = colorActual;
         pincel.beginPath();
         pincel.arc(x, y, 5, 0, 2 * 3.14);
         pincel.fill();
@@ -86,11 +87,34 @@ function capturarMovimientoDelMouse(evento){
     
     if (puedeDisenharArea(x,y)){
     
-                dibujarCirculo(x,y);
+                dibujarCirculo(x,y,colorActual);
     
     }
     
 }
+
+function seleccionarColor(evento){
+     
+    var x = evento.pageX - pantalla.offsetLeft;
+    var y = evento.pageY - pantalla.offsetTop;
+
+    if  (y > yCuadrados && y < (yCuadrados + tamanhoCuadrados)){  
+    
+    if  (x > xRojo && x < (xRojo + tamanhoCuadrados)){
+
+            return colorActual = "red";
+        
+        }else if(x > xVerde && x < (xVerde + tamanhoCuadrados)){
+
+            return colorActual = "green";
+        }else if (x > xAzul && x < (xAzul + tamanhoCuadrados)){
+
+            return colorActual = "blue";
+        }
+    }    
+}
+
+pantalla.onclick = seleccionarColor;
     
 pantalla.onmousemove = capturarMovimientoDelMouse;
 
